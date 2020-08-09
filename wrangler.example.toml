@@ -1,0 +1,6 @@
+name = "url-shortener"
+type = "webpack"
+account_id = "fedbca1234567890abcdef"
+workers_dev = false
+route = "example.com/*"
+zone_id = "abcdef0987654321fedcba"
