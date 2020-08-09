@@ -15,6 +15,6 @@ Here's step-by-step instructions for setting it up, also available [on my blog](
 6. Set your Account ID in `wrangler.toml` then run `wrangler publish` to deploy your app to a default subdomain of `workers.dev`
 7. To get it on your custom domain, set `workers_dev` to `false`, and `zone_id` in `wrangler.toml` to the Zone ID of your domain in Cloudflare, and `route` to `your-domain.com/*`.
 
-This URL shortener can only have new URLs added by modifying `urls.json` and re-deploying. That may not be what you want, but it's perfect for me because I want mine to be private. You could look in to Cloudflare Workers KV to create a dynamic system, but for me the $5/month was a little too steep for something this mundane.
+This URL shortener can only have new URLs added by modifying `urls.json` and re-deploying. That may not be what you want, but it's perfect for me because I want mine to be private. You could look in to Cloudflare Workers KV to create a dynamic system, but for me the $5/month price floor was a little too steep for something this mundane.
 
 Mine's deployed at `pxeger.net`.
