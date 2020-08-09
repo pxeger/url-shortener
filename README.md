@@ -9,7 +9,7 @@ Here's step-by-step instructions for setting it up, also available [on my blog](
 1. Get a [Cloudflare account](https://cloudflare.com) and enable Workers
 2. Install [`wrangler`](https://github.com/cloudflare/wrangler), Cloudflare's CLI tool for working with Workers, and set it up using your Cloudflare API token
 3. Copy the [Workers JavaScript template repository](https://github.com/cloudflare/worker-template)
-4. Write your code in `index.js` - you can see mine in [`index.js`](./index.js) (don't worry, it's very simple)
+4. Write your code - you can see mine in [`index.js`](./index.js) (don't worry, it's very simple)
 4. Create your own `urls.json` for mapping paths( e.g. `foo` for `https://your-domain.com/foo`) to redirect URLs.
 5. Set `type` to `webpack` in `wrangler.toml` (see the [docs](https://developers.cloudflare.com/workers/tooling/wrangler/webpack/))
 6. Set your Account ID in `wrangler.toml` then run `wrangler publish` to deploy your app to a default subdomain of `workers.dev`
