@@ -1,15 +1,9 @@
-const urls = {
-  foo: 'https://www.example.com',
-  '': 'https://www.pxeger.com/2020-08-06-world\'-simplest-url-shortener-using-cloudflare-workers/',
-}
+const urls = require('./urls.json');
 
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));
 })
-/**
- * Respond with hello worker text
- * @param {Request} request
- */
+
 async function handleRequest(request) {
   const path = new URL(request.url).pathname.substring(1);
   console.log(request.headers['user-agent'], new Date(), path);
